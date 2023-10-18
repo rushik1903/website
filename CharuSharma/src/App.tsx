@@ -10,10 +10,10 @@ function App(){
     width:'100vw',
     height:'100vh'
     }}>
-      {/* <CombinedPage></CombinedPage> */}
+      <CombinedPage></CombinedPage>
       {/* <a className="twitter-timeline" href="https://twitter.com/sh_charu?ref_src=twsrc%5Etfw">Tweets by sh_charu</a> */}
       
-      <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="sai-rushik-jasti" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/sai-rushik-jasti?trk=profile-badge">Sai Rushik Jasti</a></div>
+      {/* <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="sai-rushik-jasti" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/sai-rushik-jasti?trk=profile-badge">Sai Rushik Jasti</a></div> */}
     </div>);
 }
 
