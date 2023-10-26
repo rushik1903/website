@@ -1,11 +1,69 @@
+/* default */
+:root {
+    --mainColor0: #2b2b2b;
+    --mainColor: #202020;
+    --color3: #2E2E2E;
+    --color2: #231F1F;
+    --sideBarOptionsColor: #BBB;
+    --sideBarDescriptionColor: #aaa;
+    --sideBarFooterIconsColor: #ccc;
+    --sideBarNameColor: #fff;
+}
+
+/* yelow-brown */
+:root {
+    --mainColor0: #664400;
+    --mainColor: #4d3300;
+    --color3: #4d3300;
+    --color2: #997300;
+    --sideBarNameColor: #e6e6e6;
+    --sideBarDescriptionColor: #cccccc;
+    --sideBarOptionsColor: #e6e6e6;
+    --sideBarFooterIconsColor: #ccc;
+}
+
+/* dark blue */
+/* :root {
+    --mainColor0: #000033;
+    --mainColor: #00001a;
+    --color3: #00001a;
+    --color2: #00001a;
+    --sideBarNameColor: #e6e6e6;
+    --sideBarDescriptionColor: #cccccc;
+    --sideBarOptionsColor: #e6e6e6;
+    --sideBarFooterIconsColor: #ccc;
+} */
+
+/* brown red */
+/* :root {
+    --mainColor0: #331a00;
+    --mainColor: #1a0d00;
+    --color3: #1a0d00;
+    --color2: #4d2600;
+    --sideBarNameColor: #fff;
+    --sideBarDescriptionColor: #aaa;
+    --sideBarOptionsColor: #BBB;
+    --sideBarFooterIconsColor: #ccc;
+} */
+
+div.alternateBGColors p{
+    margin: 0;
+    padding: 20px 5px 20px 10px;
+}
+div.alternateBGColors p:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+  
+
 .totalContainer {
     display: flex;
     position: relative;
     overflow-x: hidden;
     min-height: 100%;
-  }
+}
 
 .sidebar{
+    background-color: var(--mainColor0);
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -20,8 +78,8 @@
 }
 .mainNav li{
     padding-top: 2px;
-    border-bottom: solid #2E2E2E;
-    border-top: solid #231F1F;
+    border-bottom: solid var(--color3);
+    border-top: solid var(--color2);
     border-width: 1px;
     margin: 0 0 0 0 !important;
     padding-bottom: 5px;
@@ -29,6 +87,7 @@
 
 .CombinedPage{
     display: none;
+    background-color: var(--mainColor0);
 }
 
 .mainPage{
@@ -88,18 +147,18 @@
 }
 .title h2{
     font-size: 28px;
-    color: #fff;
+    color: var(--sideBarNameColor);
     font-weight: 300;
     margin: 20px 0px 10px 0px;
 }
 .title h3{
     font-size: 18px;
-    color: #aaa;
+    color: var(--sideBarDescriptionColor);
     font-weight: 300;
     margin-bottom: 10px;
 }
 .sidebarFooter{
-    background-color: #202020;
+    background-color: var(--mainColor);
     display: block;
     margin-top: auto;
 }
@@ -116,7 +175,7 @@
     padding: 5px;
 }
 .socialIcons a{
-    color: #ccc;
+    color: var(--sideBarFooterIconsColor);
 }
 .textWidget{
     text-align: center;
@@ -140,7 +199,7 @@ ul #Navigation{
 #Navigation a{
     text-decoration: none;
     font-size: 27px;
-    color: #BBB;
+    color: var(--sideBarOptionsColor);
     margin-left: 15px;
 }
 #Navigation a p{
@@ -158,14 +217,31 @@ ul #Navigation{
 
 /* homePageStyles */
 .homeContainer{
+    display: flex;
+    flex-direction: row;
     min-height: 100vh;
-    padding: 100px 10%;
+    padding: 100px 20px 100px 10%;
 }
 .homeContainerIntro{
-    width: 70%;
+    width: 65%;
+    margin-right: 40px;
+}
+.twitterEmbedContainer{
+    margin-left: 3%;
+    width: 30%;
 }
 @media only screen and (max-width: 600px) {
+    .homeContainer{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 100px 10% 100px 10%;
+    }
     .homeContainerIntro{
+        width: 100%;
+    }
+    .twitterEmbedContainer{
+        margin-left: 0%;
         width: 100%;
     }
 }
@@ -201,7 +277,7 @@ ul #Navigation{
     font-size: 50px;
     font-weight: 300;
     margin-bottom: 25px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--sideBarFooterIconsColor);
     padding-bottom: 20px;
     text-align: start;
 }
@@ -231,9 +307,11 @@ ul #Navigation{
 
 .experienceContent li{
     margin-bottom: 15px;
+    font-size: 18px;
 }
 .experienceContent ul{
     margin-top: 15px;
+    list-style: none;
 }
 
 .othersContent p{

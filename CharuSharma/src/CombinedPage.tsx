@@ -18,7 +18,6 @@ const CombinedPage: React.FC = () => {
         position:'fixed',
         width:'50px',
         padding:'8px 10px',
-        backgroundColor : '#2b2b2b',
         margin:'5px'
     }}>
         <i className="fa fa-bars" aria-hidden="true" style={{
@@ -40,9 +39,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isClassChanged }) => {
   return (
     <>
     <div className={"sidebar " + (isClassChanged ? 'sidebarTransition' : '')}
-    style={{
-        backgroundColor : '#2b2b2b',
-      }}
       >
        <SidebarContent></SidebarContent> 
     </div>
