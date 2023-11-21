@@ -3,7 +3,8 @@ function SidebarContent(){
         <div className="profileContainer">
             <div className="portrate">
                 <a className="circleFrame">
-                    <img className="circleFrame" width={'125px'} src = "./public/CharuSharmaProfile2.jpeg"/>
+                    {/* <img className="circleFrame" width={'125px'} src = "./public/CharuSharmaProfile2.jpeg"/> */}
+                    <a href="https://ibb.co/4pjvsHZ"><img className="circleFrame" width={'125px'} src="https://i.ibb.co/7KGMgqJ/Charu-Sharma-Profile2.jpg" alt="Charu-Sharma-Profile2" /></a>
                 </a>
             </div>
             <div className="title">
