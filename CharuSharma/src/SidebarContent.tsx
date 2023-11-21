@@ -79,7 +79,7 @@ function SidebarContent(){
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.google.com/url?q=https%3A%2F%2Ftwitter.com%2Fcharusharma1991&sa=D&sntz=1&usg=AOvVaw09OJBvGqAjOi9Ozr0cmtZD">
+                        <a target="_blank" href="https://twitter.com/sh_charu">
                             <i className="fa fa-twitter"></i>
                         </a>
                     </li>
@@ -95,7 +95,7 @@ function SidebarContent(){
                     
                 </div> */}
                 <div className="textWidget">
-                    <p><a href = "">Accessebility</a></p>
+                    <p><a href = "https://www.iiit.ac.in/about/infrastructure/">Accessebility</a></p>
                 </div>
             </div>
             <div className="copyright">Copyright © Charu Sharma</div>
